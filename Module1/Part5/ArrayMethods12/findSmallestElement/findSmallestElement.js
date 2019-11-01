@@ -28,3 +28,6 @@ function findSmallestElement(arr) {
     // console.log(arr, smallestEl)
     return smallestEl;
 }
+
+var output = findSmallestElement([4, 1, 9, 10]);
+console.log(output); // --> 1
