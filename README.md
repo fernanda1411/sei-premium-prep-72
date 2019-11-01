@@ -48,3 +48,11 @@ sei-premium-prep-72/Module1/Part5/ArrayMethod12/findSmallestElement
 2) If not yet open, on a browser, go to `http://10.0.0.172:5500/` or `http://localhost:5500/`
 
 3) Open the dev tools. One way to do it is pressing `cmnd + option + j`. On the dev tools, click on `console` to see the output of your code `console.log` and clic on `source` and on the file name `findSmallestElement.js` to see the source code.
+
+## Commiting changes and pushing to github
+
+```
+git add .
+git commit -m 'Description of your changes'
+git push
+```
