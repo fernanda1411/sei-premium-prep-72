@@ -26,10 +26,10 @@ note: after step 2 a new browswer window should open with the url being `http://
 
 1) Create a folder with the exercise name under the correct folder hierarch. For example:
 
-For the exercise `findSmallestElement` on `Module 1`, `Part 5` under `Array Methods 12` you should create a folder at:
+For the exercise `findSmallestElement` on `Module 1`, `Part 5` you should create a folder at:
 
 ```
-sei-premium-prep-72/Module1/Part5/ArrayMethod12/findSmallestElement
+sei-premium-prep-72/Module1/Part5/findSmallestElement
 ```
 
 2) Inside the new folder, create an index.html and a javascript file named aftter the exercise name (same as the new folder name).
