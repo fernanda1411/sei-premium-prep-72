@@ -1,5 +1,8 @@
 /*
-Use the skeleton provided to write a working implementation of a sum and an average function. The solution will require that you use your sum function within your average function. While you should create your own test suite to get the most out of this exercise, there are automated tests provided as well.
+Use the skeleton provided to write a working implementation of a sum and an average function. 
+The solution will require that you use your sum function within your average function. 
+While you should create your own test suite to get the most out of this exercise, 
+there are automated tests provided as well.
 
 Notes:
 
@@ -31,23 +34,12 @@ function assertEqual(actual, expected, testName) {
   if (actual === expected) {
     console.log("PASSED [" + testName + "]");
   } else {
-    console.log(
-      "FAILED [" +
-        testName +
-        '] Expected "' +
-        expected +
-        '", but got "' +
-        actual +
-        '"'
-    );
+    console.log("FAILED [" + testName +'] Expected "' + expected + '", but got "' + actual + '"');
   }
 }
 // TESTS CASES
+
 let sumTestArray = [1, 2, 3, 4, 5];
 let actualSumResult = sum(sumTestArray);
 let expectedSumResult = 15;
-assertEqual(
-  actualSumResult,
-  expectedSumResult,
-  "should accurately sum the integers in an array"
-);
+assertEqual(actualSumResult, expectedSumResult, "should accurately sum the integers in an array");
