@@ -1,7 +1,8 @@
 /*Question
 Please carefully note, the title of the challenge is "Using the Console".
 
-While on this page, open up the developer console, and paste these lines of code. Feel free to return to the previous lesson for more details on how to accomplish this task.
+While on this page, open up the developer console, and paste these lines of code. Feel free to return to the previous 
+lesson for more details on how to accomplish this task.
 
 var elements = document.getElementsByClassName("title");
 var target = elements[1];
