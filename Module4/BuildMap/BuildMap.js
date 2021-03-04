@@ -19,5 +19,13 @@ console.log(output); // [2, 3, 4, 5]
 */
 
 function map(array, callbackFunction) {
-  // your code here
+  const result = [];
+
+  for(let i = 0; i < array.length; i++){
+    const candidate = array[i];
+    result.push(callbackFunction(candidate));
+  }
+  return result;
 }
+
+console.log(map([1, 2, 3, 4], el => el + 1));

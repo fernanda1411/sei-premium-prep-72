@@ -20,3 +20,18 @@ function isEvenWithoutModulo(num) {
 
 var output = isEvenWithoutModulo(8);
 console.log(output); // --> true
+
+
+
+// --> another solution
+
+function isEvenWithoutModulo2(num) {
+    let result = Math.abs(num);
+    while(result > 0){
+        result -= 2
+    }
+    return result === 0;
+}
+
+var output2 = isEvenWithoutModulo2(8);
+console.log(output2); // --> true

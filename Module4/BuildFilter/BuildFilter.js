@@ -1,8 +1,10 @@
 /*
 We are going to complete a function called filter. 
+
 It should behave similarly to the native array method of the 
-same name from the previous lesson. However, your implementation 
-should not use Array.prototype.filter, i.e. should not look like this:
+same name from the previous lesson.
+
+However, your implementation should not use Array.prototype.filter, i.e. should not look like this:
 
 function filter(array, callbackFunction) {
   return array.filter(callbackFunction);
@@ -19,5 +21,15 @@ console.log(output); // [2, 4]
 */
 
 function filter(array, callbackFunction) {
-  // your code here
+  const result = [];
+
+  for(let i = 0; i < array.length; i++){
+    const candidate = array[i];
+    if(callbackFunction(candidate)){
+      result.push(candidate);
+    }
+  }
+  return result;
 }
+
+console.log(filter([2, 4, 5, 7, 8], el => el > 4));

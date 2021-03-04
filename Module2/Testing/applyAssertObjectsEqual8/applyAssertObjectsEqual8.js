@@ -7,7 +7,7 @@ Similarly to last time, the first step will be to set up some tests for the code
 
 function addFullNameProp(obj) {
   var firstName = obj.firstName;
-  var lastName = obj[lastName];
+  var lastName = obj.lastName;
 
   if (firstName && lastName) {
     obj["fullName"] = firstName + " " + lastName;
@@ -23,14 +23,21 @@ function assertObjectsEqual(actual, expected, testName) {
   if (actual === expected) {
     console.log("passed");
   } else {
-    console.log(
-      "FAILED [" +
-        testName +
-        '], expected "' +
-        expected +
-        '", but got "' +
-        actual +
-        '"'
-    );
+    console.log("FAILED [" + testName + '], expected "' + expected + '", but got "' + actual + '"');
   }
 }
+
+// TESTS CASES
+let inputObject = {
+  firstName: 'David',
+  lastName: 'Coleman'
+};
+
+let outputObject = addFullNameProp(inputObject);
+let expectedObject = {
+  firstName: 'David',
+  lastName: 'Coleman',
+  fullName: 'David Coleman'
+}
+
+assertObjectsEqual(outputObject, expectedObject, 'should add fullName property to unput object');

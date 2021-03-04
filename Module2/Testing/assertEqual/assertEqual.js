@@ -7,7 +7,7 @@ Your function should compare actual and expected values with strict equality (tr
 function assertEqual(actual, expected, testName) {
     
     // actual - a scalar value
-    // expected - a scala
+    // expected - a scalar
     // testName - a string
     
     

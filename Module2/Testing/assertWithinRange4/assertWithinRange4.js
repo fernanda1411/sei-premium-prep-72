@@ -48,7 +48,7 @@ function assertWithinRange(low, high, actual, testName) {
   } else {
     //imprima
     console.log(
-      "FAILED [" +
+      "FAIL [" +
         testName +
         '] "' +
         actual +

@@ -8,4 +8,9 @@ const artist = {
 }
 */
 
-const {name, songs: [first, second]} = artist;
+const artist = {
+  name: 'Eurythmics',
+  songs: [ 'Sweet Dreams', 'Here Comes the Rain Again', 1,5,6 ]
+}
+
+const {name, songs: [first, second, ...rest]} = artist;

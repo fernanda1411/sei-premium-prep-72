@@ -46,10 +46,22 @@ Challenges
 Update the code below to correctly use object shorthand.
 */
 
+
+// function constructPerson(name = "Anonymous", age = 0, hobbies = []) {
+//   return {
+//     name: name,
+//     age: age,
+//     hobbies: hobbies
+//   };
+// }
+
+
 function constructPerson(name = "Anonymous", age = 0, hobbies = []) {
   return {
-    name: name,
-    age: age,
-    hobbies: hobbies
+    name,
+    age,
+    hobbies
   };
 }
+
+

@@ -20,3 +20,18 @@ function isOddWithoutModulo(num) {
 
 var output = isOddWithoutModulo(17);
 console.log(output); // --> true
+
+
+
+// --> another version
+
+function isOddWithoutModulo2(num) {
+    let result = Math.abs(num);
+    while(result > 1){
+        result -= 2;
+    }
+    return result === 1;
+}
+
+var output2 = isOddWithoutModulo2(17);
+console.log(output2); // --> true

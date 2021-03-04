@@ -17,24 +17,28 @@ Modulo always returns the sign of the first number.
 */
 
 function modulo(num1, num2) {
-  // If divide an even number by two, always get a whole number
-  // If divide an odd number by two, always get a decimal
-  // Divide an even number by two, get an integer
-  // Divide an odd number by two, get a float
-  // The Number.isInteger() method determines whether the passed value is an integer
-
-  let divided = num1 / num2;
-  let intenger = null;
-
-  if (num1 < 0 || num2 < 0) {
-    intenger = Math.round(divided);
-  } else {
-    intenger = Math.floor(divided);
+  if (isNaN(num1) || isNaN(num2)) {
+    return NaN;
   }
-  let newNum = intenger * num2;
-  let result = num1 - newNum;
 
-  return result;
+  if (num1 === 0) {
+    return 0;
+  }
+  
+  if (num2 === 0) {
+    return NaN;
+  }
+  
+  
+  const isFirstNumberNegative = num1 < 0;
+  const n1 = Math.abs(num1);
+  const n2 = Math.abs(num2);
+  
+  let result = n1;
+  while(result >= n2){
+    result = result - n2;
+  }
+  return isFirstNumberNegative ? -result : result;
 }
 
 var output = modulo(25, 4);

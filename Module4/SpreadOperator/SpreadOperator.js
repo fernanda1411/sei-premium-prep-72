@@ -33,5 +33,8 @@ function greet(name, greeting) {
 
 function greetNisha() {
   const personAndGreeting = ["Nisha", "Hi there"];
-  return greet(personAndGreeting[0], personAndGreeting[1]); // this is the line to change
+  // return greet(personAndGreeting[0], personAndGreeting[1]); // this is the line to change
+  return greet(...personAndGreeting)
 }
+
+console.log(greetNisha())

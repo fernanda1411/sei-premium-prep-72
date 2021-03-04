@@ -10,6 +10,9 @@ multiply(1, 2, 3) // 6
 multiply(1, 2, 3, 4) // 24
 */
 
-function multiply () {
-
+function multiply (...args) {
+    console.log(args)
+    // console.log(arguments)
 }
+
+multiply(1, 2, 3, 4)

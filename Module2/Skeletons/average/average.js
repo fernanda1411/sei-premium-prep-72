@@ -40,6 +40,11 @@ function assertEqual(actual, expected, testName) {
 // TESTS CASES
 
 let sumTestArray = [1, 2, 3, 4, 5];
+
 let actualSumResult = sum(sumTestArray);
 let expectedSumResult = 15;
 assertEqual(actualSumResult, expectedSumResult, "should accurately sum the integers in an array");
+
+let actualAverage = average(input);
+let expectedAverage = 3;
+assertEqual(actualAverage, expectedAverage, 'should correct return the average of an array of numbers');

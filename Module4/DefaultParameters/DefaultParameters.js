@@ -41,11 +41,21 @@ You Don't Know JS: Default Parameters
 Update the code below to correctly use default parameters.
 */
 
-function constructPerson(name, age, hobbies) {
-  name = name || "Anonymous";
-  age = age || 0;
-  hobbies = hobbies || [];
+// function constructPerson(name, age, hobbies) {
+//   name = name || "Anonymous";
+//   age = age || 0;
+//   hobbies = hobbies || [];
 
+//   const person = {
+//     name: name,
+//     age: age,
+//     hobbies: hobbies
+//   };
+
+//   return person;
+// }
+
+function constructPerson(name = 'Anonymous', age = 0, hobbies = []) {
   const person = {
     name: name,
     age: age,
@@ -54,3 +64,5 @@ function constructPerson(name, age, hobbies) {
 
   return person;
 }
+
+console.log(constructPerson());

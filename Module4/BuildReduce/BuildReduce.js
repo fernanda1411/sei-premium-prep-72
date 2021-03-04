@@ -19,5 +19,13 @@ console.log(output); // 10
 */
 
 function reduce(array, callbackFunction, startingValue) {
-  // your code here
+  let acc = startingValue;
+
+  for(let i = 0; i < array.length; i++){
+    const candidate = array[i];
+    acc = callbackFunction(acc, candidate);
+  }
+  return acc;
 }
+
+console.log(reduce([1, 2, 3, 4], (acc, curr) => acc + curr, 2))

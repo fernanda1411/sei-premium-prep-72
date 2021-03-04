@@ -11,14 +11,13 @@ If the array is empty, it should return an empty string.
 
 function getLongestElement(arr) {
     
-    if (!Array.isArray(arr) || arr.length === 0) { 
-    return '';
-        
+    if (arr.length === 0) { 
+        return '';
     }
     
     let longestWord = arr[0]; 
     
-    for(let i = 0; i <arr.length; i++) {
+    for(let i = 0; i < arr.length; i++) {
         
         if (arr[i].length > longestWord.length) {
             longestWord = arr[i]; 
@@ -27,5 +26,6 @@ function getLongestElement(arr) {
     return longestWord; 
 }
 
-var output = getLongestElement(['one', 'two', 'three']);
+var output = getLongestElement(['one', 'two','ARRRR', 'three']);
+// var output = getLongestElement(['one', 'two', 'three']);
 console.log(output); // --> 'three'
